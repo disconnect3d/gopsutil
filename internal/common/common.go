@@ -197,7 +197,7 @@ func ByteToString(orig []byte) string {
 	return string(orig[l:n])
 }
 
-// ReadInts reads contents from single line file and returns them as []int32.
+// ReadInts reads contents from single line file and returns them as []int64.
 func ReadInts(filename string) ([]int64, error) {
 	f, err := os.Open(filename)
 	if err != nil {
